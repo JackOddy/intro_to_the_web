@@ -1,11 +1,18 @@
 <!DOCTYPE HTML>
 <head>
-<style>
-img{
-  border: dashed;
-  border-color: red;
-}
-</style>
+  <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
+  <link rel='stylesheet' type='text/css' href='/style.css'
 </head>
-<h1>My name is <%= yield %></h1>
+<body>
+<h1>My name is <div id='thing'><%=
+if yield.nil?
+  "<form action='/named-cat'>
+    <input autofocus='autofocus' type='text' name='name'>
+    <button class='button' type='submit'>Submit</button>
+  </form>"
+else
+  yield
+end
+  %></div></h1>
   <img src='http://bit.ly/1eze8aE'>
+</body>

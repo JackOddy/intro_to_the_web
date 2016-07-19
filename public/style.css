@@ -1,0 +1,54 @@
+
+body{
+  font-family: comfortaa;
+  color: rgb(138,206,217);
+  text-align: center;
+}
+
+img{
+  border: solid;
+  border-color: lightsalmon;
+  border-radius: 50px;
+}
+
+input{
+  border-radius: 20px;
+  border: solid;
+  height: 25px;
+  vertical-align: middle;
+  border-color: pink;
+  text-align: center;
+  color: rgb(138,206,217);
+  font-size: 20px;
+}
+
+input:focus{
+  outline:none;
+}
+
+button{
+  border-radius: 20px;
+  border: solid;
+  height: auto;
+  vertical-align: middle;
+  border-color: pink;
+  background-color: white;
+  font-size: 20px;
+  color: rgb(138,206,227);
+  background-color: transparent;
+}
+
+button:hover{
+  position: relative;
+  top: 1px;
+}
+
+button:focus{
+  position: relative;
+  top: 2px;
+  outline:none;
+}
+
+#thing{
+  display: inline-block;
+}
